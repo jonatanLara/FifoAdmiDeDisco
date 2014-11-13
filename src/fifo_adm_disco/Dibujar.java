@@ -14,8 +14,8 @@ import java.awt.Graphics;
  * @author jonatanLara
  */
 public class Dibujar {
-    public static void hacerLineas(Graphics g, int x ,int y,int x1, int y1){
-        //g.setColor(Color.green);
+    public static void hacerLineas(Graphics g, int x ,int y,int x1, int y1,Color color){
+        g.setColor(color);
         g.drawLine(x, y, x1, y1);
     }
 }
