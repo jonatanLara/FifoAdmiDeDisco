@@ -11,12 +11,12 @@ package fifo_adm_disco;
  * @author jonatanLara
  */
 public class Metodos {
-   int Num[];
+   
     public Metodos(){
-       Num = new int [7];
+       
     }
    
-   public int sumaNumero(int i){
+   public int PasarAPositivo(int i){
        if (i<0) {
            i = i*(-1);
            
@@ -27,21 +27,17 @@ public class Metodos {
        }
        return i;
    }
-   public void imipir(int x){
-       for (int i = 0; i < x; i++) {
-           System.out.print("*");
-      }
-       System.out.println("");
-   }
+   
    public void arr(int x){
    String arreglo[] = new String[41];
-      arreglo[x] ="*";
-     // arreglo[6] ="*";
+   //String arRegla[] = new String[41];
+   
+      arreglo[x] =String.valueOf(x);
        for (int i = 0; i < arreglo.length; i++) {
            
            
            if (arreglo[i]==null) {
-               System.out.print("+");
+               System.out.print("-");
            }else{
                 System.out.print(arreglo[i]);
            }
@@ -49,10 +45,10 @@ public class Metodos {
        }
        System.out.println("");
      }
-    public void regla(){
-    int arr[] = new int[41];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i]=i;
+    public void regla(int x){
+    
+        for (int i = 0; i < x; i++) {
+            
             System.out.print(i);
         }
         
